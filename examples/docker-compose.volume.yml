@@ -1,0 +1,8 @@
+version: '3'
+services:
+  osmond:
+    image: mosswill/osmond:latest
+    ports:
+      - 80:80
+    volumes:
+      - .env:/.env
