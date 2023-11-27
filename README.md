@@ -24,7 +24,7 @@ Osmond has all these features implemented :
 On top of these, one may appreciate the following characteristics :
 - Written in Go
 - Holds in a single file with few dependencies
-- Holds in a ~30 MB Docker container
+- Holds in a ~14 MB compressed Docker image
 
 For more information, read about [Configuration](#configuration) and [API Reference](#api-reference).
 
