@@ -44,6 +44,10 @@ services:
 
       VIRTUAL_HOST: "your-domain.tld"
       VIRTUAL_PORT: "80"
+      # Depending on your setup, you may also need
+      # CERT_NAME: "default"
+      # Or even
+      # LETSENCRYPT_HOST: "your-domain.tld"
 
   proxy:
     image: jwilder/nginx-proxy
