@@ -6,12 +6,12 @@ COPY go.mod  .
 COPY go.sum  .
 COPY main.go .
 
-RUN go build main.go
+RUN CGO_ENABLED=0 GOOS=linux go build -o osmond main.go
 
 FROM gcr.io/distroless/base
 
 WORKDIR /
 
-COPY --from=builder /app/main .
+COPY --from=builder /app/osmond .
 
-ENTRYPOINT ["./main"]
+ENTRYPOINT ["./osmond"]
