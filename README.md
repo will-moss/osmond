@@ -29,7 +29,7 @@ On top of these, one may appreciate the following characteristics :
 For more information, read about [Configuration](#configuration) and [API Reference](#api-reference).
 
 
-## Examples
+## Deployment and Examples
 
 ### Deploy with Docker
 
@@ -139,16 +139,16 @@ Osmond exposes the following API :
 
 #### Heartbeat
 
-```http
+```
   GET /heartbeat
 ```
-```http
+```
   .
 ```
 
 #### Get the bookmarklet template
 
-```http
+```
   GET /bookmarklet
 ```
 ```javascript
@@ -157,7 +157,7 @@ javascript:l=document.location.href,s="<SECRET>",r=encodeURIComponent("<RECIPIEN
 
 #### Get the actual bookmarklet code for your instance
 
-```http
+```
   POST /bookmarklet
 ```
 
@@ -171,7 +171,7 @@ javascript:l=document.location.href,s="<SECRET>",r=encodeURIComponent("<RECIPIEN
 
 #### Send a page by email
 
-```http
+```
   POST /relay
 ```
 
