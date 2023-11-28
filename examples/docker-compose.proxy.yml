@@ -22,7 +22,7 @@ services:
       SERVER_SECRET: "<PLACEHOLDER>"
 
       SERVER_PROXIED: "TRUE"
-      SERVER_PROXY_PORTY: "443"
+      SERVER_PROXY_PORT: "443"
 
       DOWNLOAD_USER_AGENT: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
       DOWNLOAD_CONVERT_PDF: "TRUE"
