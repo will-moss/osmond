@@ -33,6 +33,25 @@ For more information, read about [Configuration](#configuration) and [API Refere
 
 ### Deploy with Docker
 
+You can run Osmond with Docker on the command line very quickly.
+
+You can use the following commands :
+
+```sh
+# Create a .env file
+touch .env
+
+# Edit .env file ...
+
+# Option 1 : Run Osmond attached to the terminal (useful for debugging)
+docker run --env-file .env -p <YOUR-PORT-MAPPING> mosswill/osmond
+
+# Option 2 : Run Osmond as a daemon
+docker run -d --env-file .env -p <YOUR-PORT-MAPPING> mosswill/osmond
+```
+
+### Deploy with Docker Compose
+
 To help you get started quickly, multiple example `docker-compose` files are located in the ["examples/"](examples) directory.
 
 Here's a description of every example :
@@ -222,7 +241,7 @@ Most often, the problem comes from a `Content Security Policy` set on the websit
 #### I lost my bookmarklet, how to get it back?
 
 You've got multiple ways to get your bookmarklet back :
-- Perform a `GET /bookmarklet` request on Osmond. It will display a bookmarklet template to fill in with you secret and email recipient.
+- Perform a `GET /bookmarklet` request on Osmond. It will display a bookmarklet template to fill in with your secret and email recipient.
 - Perform a `POST /bookmarklet` request on Osmond, providing `secret` and `recipient` in the body. It will display a complete bookmarklet.
 - Run `docker logs <YOUR-CONTAINER>` on your Osmond container. You should see your bookmarklet's template if you enabled `SHOW_BOOKMARKLET` environment variable.
 
