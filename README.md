@@ -1,6 +1,9 @@
 <p align="center">
 <h1 align="center">Osmond</h1>
-<p align="center">Self-hostable alternative to EmailThis</p>
+<p align="center">
+  Self-hostable alternative to EmailThis
+  <br />
+  Send ad-free pages and articles to your email inbox</p>
 </p>
 
 ## Introduction
